@@ -1,0 +1,70 @@
+.contenedor
+{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 8fr 2fr;
+    grid-template-areas: "header    header  header"
+                         "side1   contenido  side2"
+                         "footer    footer  footer"; /*DARLE ESTRUCTURA*/
+}
+.contenedor>div
+{
+    background-color: chartreuse;
+}
+.contenedor .header
+{
+    background-color: yellow;
+    grid-column: header;
+    /*grid-column-start: header;
+    grid-column-end: header;*/
+}
+.contenedor .side1
+{
+    background-color: bisque;
+    grid-column: side1;
+}
+.contenedor .contenido
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: beige;
+    text-align: center;
+}
+.contenedor .side2
+{
+    background-color: bisque;
+    grid-column: side2;
+}
+.contenedor .footer
+{
+    background-color: chocolate;
+    grid-column: footer;
+}
+
+/*TAREA*/
+.contenedor .side11
+{
+    background-color: coral;
+    padding: 10px;
+    margin: 10%;
+    grid-template-columns: 5px;
+
+}
+.contenedor .contenido1
+{
+    background-color: coral;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 5px;
+    padding: 10px;
+    margin: 15%;
+    grid-template-columns: 5px;
+    grid-row: 2/3;
+}
